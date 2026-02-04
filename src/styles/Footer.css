@@ -1,0 +1,35 @@
+.footer {
+  text-align: center;
+  padding: 4rem 1rem;
+  margin-top: 4rem;
+  border-top: 1px solid #222;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.email-button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.email-button:hover {
+  background-color: var(--accent-color);
+  color: black;
+  box-shadow: 0 0 15px rgba(160, 184, 0, 0.4);
+}
+
+.copyright {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}

@@ -3,6 +3,7 @@ import "../styles/ProjectCard.css";
 const ProjectCard = ({ project }) => {
   return (
     // Envolvemos todo en un link para abrir la página web
+
     <a
       href={project.link}
       target="_blank"

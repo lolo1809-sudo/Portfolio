@@ -8,7 +8,7 @@ const Footer = () => {
         lonalo1809@gmail.com
       </a>
       <p className="copyright">
-        © {new Date().getFullYear()} Lorenzo López. Casi todos los derechos
+        © {new Date().getFullYear()} Lorenzo López. Todos los derechos
         reservados.
       </p>
     </footer>

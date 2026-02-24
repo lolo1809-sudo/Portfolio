@@ -1,3 +1,9 @@
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
 .project-card {
   cursor: pointer;
   background-color: var(--bg-secondary);
@@ -11,6 +17,7 @@
   flex-direction: column;
   height: 100%;
   margin-top: 15px;
+  width: 80%;
 }
 
 .project-card:hover {
@@ -83,4 +90,10 @@
 
 .project-badge svg {
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 700px) {
+  .project-card {
+    width: 100%;
+  }
 }

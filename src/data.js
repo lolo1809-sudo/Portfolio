@@ -10,6 +10,8 @@ import {
 
 import { SiTypescript, SiTailwindcss, SiVite } from "react-icons/si";
 
+/* -------------------------- 1. PERFIL ------------------------*/
+
 export const profileData = {
   name: "Lorenzo López",
   role: "Desarrollador Front-end",
@@ -22,6 +24,8 @@ export const profileData = {
     },
   ],
 };
+
+/* -------------------------- 2. EXPERIENCIA ------------------------*/
 
 export const experienceData = [
   {
@@ -42,11 +46,13 @@ export const experienceData = [
     company: "Estudiante",
     description: [
       "Desarrollé conocimientos sólidos en HTML, CSS, JS y REACT",
-      "Realicé proyectos como un 'Clon de Netflix', 'Catálogo de Componentes (subido a internet)'",
+      "Realicé proyectos como un 'Clon de Netflix', 'Catálogo de Componentes', una documentación de React mas clara y corta, para principiantes",
       "Bases sólidas de experiencia del usuario UI/UX",
     ],
   },
 ];
+
+/* -------------------------- 3. PROYECTOS ------------------------*/
 
 export const projectsData = [
   {
@@ -63,7 +69,21 @@ export const projectsData = [
 
     link: "https://el-rincon-del-front-end.netlify.app/",
   },
+
+  {
+    id: 2,
+    title: "React Lite",
+    year: "2026",
+    description:
+      "Adaptación de la documentación oficial de React para principiantes, con explicaciones claras y cortas",
+    imageUrl: "react_lite.webp",
+    stack: [{ icon: FaReact, name: "React" }],
+
+    link: "https://reactlite.netlify.app/",
+  },
 ];
+
+/* -------------------------- 4. SKILLS ------------------------*/
 
 export const skillsData = [
   { name: "HTML5", icon: FaHtml5 },

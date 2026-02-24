@@ -31,10 +31,6 @@ function App() {
         {/* 2. SECCIÓN DE PROYECTOS */}
         <section className="section">
           <SectionTitle>Proyectos</SectionTitle>
-          <p className="projects_description">
-            Mi PRINCIPAL proyecto es el Catálogo de Componentes, debido a que
-            ahí dentro se encuentran todos mis proyectos.
-          </p>
           <div className="projects-grid">
             {projectsData.map((project) => (
               <ProjectCard key={project.id} project={project} />

@@ -6,7 +6,10 @@ import {
   FaJs,
   FaReact,
   FaGitAlt,
+  FaNodeJs,
 } from "react-icons/fa";
+
+import { SiExpress } from "react-icons/si";
 
 import { SiTypescript, SiTailwindcss, SiVite } from "react-icons/si";
 
@@ -14,7 +17,7 @@ import { SiTypescript, SiTailwindcss, SiVite } from "react-icons/si";
 
 export const profileData = {
   name: "Lorenzo López",
-  role: "Desarrollador Front-end",
+  role: "Desarrollador Full-Stack",
   photoUrl: "mi_foto.webp",
   socials: [
     { icon: FaGithub, link: "https://github.com/lolo1809-sudo" },
@@ -42,11 +45,11 @@ export const experienceData = [
   {
     id: 2,
     date: "Noviembre 2025 - Febrero 2026",
-    role: "Desarrollador Front-end",
+    role: "Desarrollador Front-end y Back-end",
     company: "Estudiante",
     description: [
-      "Desarrollé conocimientos sólidos en HTML, CSS, JS y REACT",
-      "Realicé proyectos como un 'Clon de Netflix', 'Catálogo de Componentes', una documentación de React mas clara y corta, para principiantes",
+      "Desarrollé conocimientos sólidos en HTML, CSS, JS, REACT, Node.js y Express.js",
+      "Realicé proyectos como un 'Catálogo de Componentes', una documentación de React y Express.js mas clara y corta, para principiantes",
       "Bases sólidas de experiencia del usuario UI/UX",
     ],
   },
@@ -81,6 +84,18 @@ export const projectsData = [
 
     link: "https://reactlite.netlify.app/",
   },
+
+  {
+    id: 3,
+    title: "Express.js Lite",
+    year: "2026",
+    description:
+      "Adaptación de la documentación oficial de Express.js para principiantes, con explicaciones claras y cortas",
+    imageUrl: "expressjs_lite.webp",
+    stack: [{ icon: FaReact, name: "React" }],
+
+    link: "https://expressjslite.netlify.app/",
+  },
 ];
 
 /* -------------------------- 4. SKILLS ------------------------*/
@@ -92,6 +107,8 @@ export const skillsData = [
   { name: "TypeScript", icon: SiTypescript },
   { name: "React", icon: FaReact },
   { name: "Tailwind", icon: SiTailwindcss },
+  { name: "Node.js", icon: FaNodeJs },
+  { name: "Express.js", icon: SiExpress },
   { name: "Vite", icon: SiVite },
   { name: "Git", icon: FaGitAlt },
   { name: "GitHub", icon: FaGithub },

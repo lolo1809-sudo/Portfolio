@@ -42,7 +42,7 @@ function App() {
         <section className="section">
           <SectionTitle>Sobre mí</SectionTitle>
           <p className="about-text">
-            Desarrollador Front-end con avanzada experiencia en tecnologías. Me
+            Desarrollador Full-Stack con avanzada experiencia en tecnologías. Me
             encanta trabajar en proyectos que tengan un gran potencial.
           </p>
         </section>

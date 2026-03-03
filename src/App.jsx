@@ -41,10 +41,7 @@ function App() {
         {/* 3. SECCIÓN DE SOBRE MÍ */}
         <section className="section">
           <SectionTitle>Sobre mí</SectionTitle>
-          <p className="about-text">
-            Desarrollador Full-Stack con avanzada experiencia en tecnologías. Me
-            encanta trabajar en proyectos que tengan un gran potencial.
-          </p>
+          <p className="about-text">Desarrollador Front-end con avanzada experiencia en tecnologías. Me encanta trabajar en proyectos que tengan un gran potencial.</p>
         </section>
 
         {/* 4. SECCIÓN DE SKILLS */}

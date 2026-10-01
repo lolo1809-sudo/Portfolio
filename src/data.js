@@ -1,14 +1,11 @@
-import { FaGithub, FaLinkedin, FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaNodeJs } from "react-icons/fa";
-
-import { SiExpress } from "react-icons/si";
-
-import { SiTypescript, SiTailwindcss, SiVite } from "react-icons/si";
+import { FaGithub, FaLinkedin, FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt } from "react-icons/fa";
+import { SiMercadopago, SiSupabase, SiTypescript, SiTailwindcss, SiVite } from "react-icons/si";
 
 /* -------------------------- 1. PERFIL ------------------------*/
 
 export const profileData = {
   name: "Lorenzo López",
-  role: "Desarrollador Front-end",
+  role: "Desarrollador Full-Stack",
   photoUrl: "mi_foto.webp",
   socials: [
     { icon: FaGithub, link: "https://github.com/lolo1809-sudo" },
@@ -19,26 +16,15 @@ export const profileData = {
   ],
 };
 
-/* -------------------------- 2. EXPERIENCIA ------------------------*/
+/* -------------------------- 2. EDUCACIÓN ------------------------*/
 
-export const experienceData = [
+export const educationData = [
   {
     id: 1,
-    date: "Marzo 2025 - Noviembre 2025",
-    role: "Primer año de Facultad",
-    company: "UNSJ",
-    description: ["Conocimientos sólidos de lógica de programación en C", "Análisis de algoritmos y estructuras de computadoras", "Bases sólidas de Álgebra Lineal"],
-  },
-  {
-    id: 2,
-    date: "Noviembre 2025 - Febrero 2026",
-    role: "Desarrollador Front-end",
-    company: "Estudiante",
-    description: [
-      "Desarrollé conocimientos sólidos en HTML, CSS, JS, REACT",
-      "Realicé 'El Rincón del Front-end, un aplicación web con diversas herramientas para los Front-end'",
-      "Bases sólidas de experiencia del usuario UI/UX",
-    ],
+    degree: "Licenciatura en Sistemas de Información (3°)",
+    institution: "Universidad Nacional de San Juan",
+    period: "2025 - Presente",
+    url: "../LSI.pdf",
   },
 ];
 
@@ -47,16 +33,36 @@ export const experienceData = [
 export const projectsData = [
   {
     id: 1,
-    title: "El Rincón del Front-end",
+    title: "DevShelf",
     year: "2026",
-    description: "Aplicación web para Front-end, con un catálogo de componentes, consejos de UI, etc",
-    imageUrl: "el-rincon-del-front.webp",
+    description:
+      "Aplicación web Full-Stack. \nLibrería UI para devs que les permite copiar, descargar y ver componentes UI de toda clase, desde inputs hasta páginas webs completas, permitiendo acceder a contenido premium con una suscripción mensual.",
+    imageUrl: "devshelf.webp",
     stack: [
       { icon: FaReact, name: "React" },
+      { icon: SiVite, name: "Vite" },
       { icon: SiTailwindcss, name: "Tailwind" },
+      { icon: SiSupabase, name: "Supabase" },
+      { icon: SiMercadopago, name: "Mercado Pago" },
     ],
 
-    link: "https://el-rincon-del-front-end.netlify.app/",
+    link: "https://dev-shelf.netlify.app/",
+  },
+
+  {
+    id: 2,
+    title: "FacuPanas",
+    year: "2025",
+    description: "Aplicación web Full-Stack (4 integrantes). \nPágina que centraliza el contenido y material de estudio de toda la UNSJ, y así facilitar la vida de los estudiantes universitarios.",
+    imageUrl: "facupanas.webp",
+    stack: [
+      { icon: FaReact, name: "React" },
+      { icon: SiVite, name: "Vite" },
+      { icon: SiTailwindcss, name: "Tailwind" },
+      { icon: SiSupabase, name: "Supabase" },
+    ],
+
+    link: "https://campusvirtual-facupanas.com/",
   },
 ];
 
@@ -65,13 +71,12 @@ export const projectsData = [
 export const skillsData = [
   { name: "HTML5", icon: FaHtml5 },
   { name: "CSS3", icon: FaCss3Alt },
+  { name: "Tailwind", icon: SiTailwindcss },
   { name: "JavaScript", icon: FaJs },
   { name: "TypeScript", icon: SiTypescript },
   { name: "React", icon: FaReact },
-  { name: "Tailwind", icon: SiTailwindcss },
-  { name: "Node.js", icon: FaNodeJs },
-  { name: "Express.js", icon: SiExpress },
   { name: "Vite", icon: SiVite },
+  { name: "Supabase", icon: SiSupabase },
   { name: "Git", icon: FaGitAlt },
   { name: "GitHub", icon: FaGithub },
 ];

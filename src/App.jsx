@@ -1,13 +1,12 @@
 import "./global.css";
-import "./styles/App.css";
 
 // Importar datos
-import { profileData, experienceData, projectsData, skillsData } from "./data";
+import { profileData, educationData, projectsData, skillsData } from "./data";
 
 // Importar componentes
 import Hero from "./components/Hero";
 import SectionTitle from "./components/SectionTitle";
-import TimelineItem from "./components/Experiencia";
+import Education from "./components/Education";
 import ProjectCard from "./components/ProjectCard";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
@@ -18,20 +17,20 @@ function App() {
       <Hero data={profileData} />
 
       <main>
-        {/* 1. SECCIÓN DE EXPERIENCIA */}
-        <section className="section">
-          <SectionTitle>Experiencia</SectionTitle>
-          <div className="timeline">
-            {experienceData.map((item) => (
-              <TimelineItem key={item.id} item={item} />
+        {/* 1. SECCIÓN DE EDUCACIÓN */}
+        <section className="mb-16">
+          <SectionTitle>Educación</SectionTitle>
+          <div className="mt-8 grid gap-4">
+            {educationData.map((item) => (
+              <Education key={item.id} item={item} />
             ))}
           </div>
         </section>
 
         {/* 2. SECCIÓN DE PROYECTOS */}
-        <section className="section">
+        <section className="mb-16">
           <SectionTitle>Proyectos</SectionTitle>
-          <div className="projects-grid">
+          <div className="flex flex-wrap items-center justify-center gap-8">
             {projectsData.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
@@ -39,19 +38,22 @@ function App() {
         </section>
 
         {/* 3. SECCIÓN DE SOBRE MÍ */}
-        <section className="section">
+        <section className="mb-16">
           <SectionTitle>Sobre mí</SectionTitle>
-          <p className="about-text">Desarrollador Front-end con avanzada experiencia en tecnologías. Me encanta trabajar en proyectos que tengan un gran potencial.</p>
+          <p className="text-text-secondary max-w-[100ch]">
+            Estudiante de 3° de la Licenciatura en Sistemas de Información en la UNSJ y Desarrollador Full-Stack apasionado por crear aplicaciones web eficientes. Me enfoco en escribir código limpio,
+            aprender de forma constante y me encanta transformar ideas en productos funcionales con gran potencial.
+          </p>
         </section>
 
         {/* 4. SECCIÓN DE SKILLS */}
-        <section className="section">
+        <section className="mb-16">
           <SectionTitle>Tecnologías</SectionTitle>
           <Skills data={skillsData} />
         </section>
 
         {/* 5. SECCIÓN DE FOOTER/CONTACTO */}
-        <Footer>Tecnologías</Footer>
+        <Footer />
       </main>
     </div>
   );

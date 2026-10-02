@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="mt-24 border-t border-white/10 bg-bg-secondary/20 pt-16">
+    <footer className="mt-20 pt-10">
       {/* Contenido principal */}
       <div className="mx-auto max-w-xl px-4 text-center">
         <h2 className="mb-3 text-2xl font-bold tracking-tight text-text-primary sm:text-3xl">¿Te interesa mi perfil? ¡Hablemos!</h2>
@@ -41,8 +41,8 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Franja pegada al piso de la página */}
-      <div className="mt-16 border-t border-white/5 py-6 text-center">
+      {/* Franja pegada al piso de la página (sin la línea de arriba) */}
+      <div className="mt-12 py-6 text-center">
         <p className="text-xs text-text-secondary/70 sm:text-sm">© {new Date().getFullYear()} Lorenzo López. Todos los derechos reservados.</p>
       </div>
     </footer>
